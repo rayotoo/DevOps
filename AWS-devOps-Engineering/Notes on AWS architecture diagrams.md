@@ -11,5 +11,7 @@
 + Conduct security reviews
 + Prove and maintain compliance
 + Onboard new employees
+(Source https://www.lucidchart.com/blog/how-to-build-aws-architecture-diagrams)
+
 # Platforms to create AWS architecture diagrams
 + LucidCharts - https://www.lucidchart.com/
