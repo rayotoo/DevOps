@@ -1,7 +1,7 @@
 # AWS architecture diagrams
 # AWS architecture diagrams make it easier to understand the process of architecting, building, and running applications within the AWS cloud.
 
-# visualizing your AWS cloud architecture has many benefits, including ways to help you:
+# Visualizing your AWS cloud architecture has many benefits, including ways to help you:
 
 + Identify single points of error
 + Design for fault-tolerance
