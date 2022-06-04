@@ -3,7 +3,7 @@
 
 # Visualizing your AWS cloud architecture has many benefits, including ways to help you:
 
-+ Identify single points of error
++ Identify single points of error 
 + Design for fault-tolerance
 + Design for cost optimization
 + Build security into your design
@@ -11,3 +11,5 @@
 + Conduct security reviews
 + Prove and maintain compliance
 + Onboard new employees
+# Platforms to create AWS architecture diagrams
++ LucidCharts - https://www.lucidchart.com/
