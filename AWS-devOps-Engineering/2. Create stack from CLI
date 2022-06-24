@@ -1,6 +1,0 @@
-
-Create stack from CLI MacOS.
-1. aws cloudformation create-stack  --stack-name myFirstTest --region us-east-1 --template-body file://temp-1.yml
-
-Delete stack 
-1. aws cloudformation delete-stack --stack-name myFirstTest --region us-east-1
