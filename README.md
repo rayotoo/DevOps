@@ -29,10 +29,10 @@ This repository contains my DevOps library for AWS , Kubernetes and Docker.
 | Valaxy Technologies   | DevOps-Projects                                                       | https://lnkd.in/dHjRri48               |
 | Valaxy Technologies   | DevOps project with Git, Jenkins Docker on AWS CICD on containers     | https://lnkd.in/dtwQKwrG               |
 | Valaxy Technologies   | Simple DevOps project CI/CD through Jenkins                           | https://lnkd.in/dXsSW99a               |
-| Valaxy Technologies   | Project-1 Simple DevOps project for CI/CD CI/CD through Jenkins       | https://lnkd.in/dt7uBSA5               |
-| Valaxy Technologies   | Simple DevOps Project-4 Create Docker Image Using Jenkins And Ansible | https://lnkd.in/d8YEmAxP               |
+| Valaxy Technologies   | DevOps project for CI/CD CI/CD through Jenkins                        | https://lnkd.in/dt7uBSA5               |
+| Valaxy Technologies   | Create Docker Image Using Jenkins And Ansible                         | https://lnkd.in/d8YEmAxP               |
 | Valaxy Technologies   | Troubleshooting steps                                                 | https://lnkd.in/dYazXJQv               |
-| Valaxy Technologies   | P-4 Part 03 Enable versioning on docker images through jenkins        | https://lnkd.in/dVQ7eyuW               |
+| Valaxy Technologies   | Enable versioning on docker images through jenkins                    | https://lnkd.in/dVQ7eyuW               |
 | Valaxy Technologies   | Simple DevOps project CI/CD through Jenkins                           | https://lnkd.in/dXsSW99a               |
 | Abhishek Modi         | DevOps Tutorial : Simple DevOps Project                               | https://lnkd.in/dvPFiAZQ               |
 | DevOps Journey        | How to Learn DevOps Through a Practical Project                       | https://lnkd.in/dT8c6R-s               |
