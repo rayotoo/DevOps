@@ -4,7 +4,7 @@ Description: >
     a pair of NAT Gateways (one in each AZ), and default routes for them in the private subnets.
 
 Parameters:
-    Environment:
+    Environment: 
         Description: 'Environment definition.'
         Type: 'String'
         Default: 'Dev'
