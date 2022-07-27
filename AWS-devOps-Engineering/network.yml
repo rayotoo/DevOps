@@ -7,7 +7,7 @@ Parameters:
     Environment: 
         Description: 'Environment definition.'
         Type: 'String'
-        Default: 'Dev'
+        Default: 'Udagram'
 
     VpcCIDR: 
         Description: Please enter the IP range (CIDR notation) for this VPC
