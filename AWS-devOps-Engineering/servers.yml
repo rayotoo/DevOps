@@ -1,7 +1,7 @@
 Description: >
     Raymond Otoo / Udagram
-    CFN Template for deploying a high-availability web application on a pre-configured infrastructure.
-    See network.yaml for details on the infrastructure setup for this project.
+    A cloudFormation template for deploying a high-availability web application on a pre-configured infrastructure.
+    Deployed afte network.yaml has deployed the root resources.
 
 Parameters:
   ProjectName:
@@ -19,18 +19,19 @@ Parameters:
     Description: 'EC2 Instance Type'
     Default: t2.micro
 
-
   EC2VolumeSize:
     Description: The size of the EBS volume attached to an EC2 instance. 
     Type: Number
     Default: 10
 
 
+
+
+
+# All the resources needed for the servers of this infrastructure are created here
 Resources:
-  #------------------------------------
-  # IAM Resource Configuration allowing
-  # EC2 instances to access S3 ReadOnly
-  #------------------------------------
+
+  # This IAM Resource Configuration allows the EC2 instances to access S3 bucket in a ReadOnly mode
   UdacityS3ReadOnlyEC2:
     Type: AWS::IAM::Role
     Properties:
@@ -55,11 +56,10 @@ Resources:
       Roles:
         - !Ref UdacityS3ReadOnlyEC2
 
-  #---------------------------------
-  # Security Group Configuration for
-  # -> Load Balancer Security Group
-  # -> Web Server Security Group
-  #---------------------------------
+
+
+
+  # This section configures the security Group for the Load Balancer Security and Web Server Security Group
   LoadBalancerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -101,9 +101,10 @@ Resources:
         - Key: Name
           Value: !Sub "${ProjectName}-Webserver-SecurityGroup" 
 
-  #--------------------------------------------------
-  # LaunchConfiguration and Autoscaling Configuration
-  #--------------------------------------------------
+
+
+
+  # Set up for the Launch configuration and configuration of the Autoscaling group.
   WebAppAutoscalingGroup:
     Type: AWS::AutoScaling::AutoScalingGroup
     Properties:
@@ -137,9 +138,9 @@ Resources:
         Ebs:
           VolumeSize: !Ref EC2VolumeSize
 
-  #----------------------------
-  # Load Balancer Configuration
-  #----------------------------
+
+
+  # This section configures the Load Balancer
   WebAppLoadBalancer:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer
     Properties:
@@ -171,10 +172,10 @@ Resources:
         ListenerArn: !Ref 'WebAppLoadBalancerListener'
         Priority: 1
 
-  #----------------------------------
-  # TargetGroup Configuration for 
-  # LoadBalancer and AutoscalingGroup
-  #----------------------------------      
+
+
+
+  # This section configures the target Group for the LoadBalancer and the autoscaling group    
   WebAppTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
@@ -191,7 +192,9 @@ Resources:
           Fn::Sub: "${ProjectName}-VPCID"
 
 
+
+# Results displayed in the output section after a successful deployment
 Outputs: 
     WebAppLoadBalancerDnsName: 
-        Description: The DNS name of the WebApp Load Balancer that can be used in a browser to access the deployed services.
+        Description: The domain of the WebApp Load Balancer used to access the deployed services from any web browser.
         Value: !Sub "http://${WebAppLoadBalancer.DNSName}"
