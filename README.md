@@ -5,7 +5,7 @@ This repository contains my DevOps library for AWS , Kubernetes and Docker.
 [![GitHub issues](https://img.shields.io/github/issues/rayotoo/DevOps?style=flat-square)](https://github.com/rayotoo/DevOps/issues)
 [![GitHub stars](https://img.shields.io/github/stars/rayotoo/DevOps?style=flat-square&color=important)](https://github.com/rayotoo/DevOps/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/rayotoo/DevOps?style=flat-square&color=blueviolet)](https://github.com/rayotoo/DevOps/network/members)
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://github.com/rayotoo/DevOps)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/rayotoo/DevOps/)
 
 
 
